@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route index element={<Home />} />
-      <Route path="/:product" element={<Product />} />
+      <Route path="compare-products/:product" element={<Product />} />
     </Routes>
   );
 }
