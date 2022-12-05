@@ -1,74 +1,63 @@
 import React from "react";
 
 // Chakra imports
-import { Button, Flex, Link, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+
+// Other imports
+import { Carousel } from "react-bootstrap";
 
 // Assets
 import banner from "assets/img/nfts/NftBanner1.png";
+import bannerimage from "assets/img/nfts/banner.png";
 
 export default function Banner() {
   // Chakra Color Mode
   return (
     <Flex
-      direction='column'
+      direction="column"
       bgImage={banner}
-      bgSize='cover'
-      py={{ base: "30px", md: "56px" }}
-      px={{ base: "30px", md: "64px" }}
-      borderRadius='30px'>
-      <Text
-        fontSize={{ base: "24px", md: "34px" }}
-        color='white'
-        mb='14px'
-        maxW={{
-          base: "100%",
-          md: "64%",
-          lg: "46%",
-          xl: "70%",
-          "2xl": "50%",
-          "3xl": "42%",
-        }}
-        fontWeight='700'
-        lineHeight={{ base: "32px", md: "42px" }}>
-        Discover, collect, and sell extraordinary NFTs
-      </Text>
-      <Text
-        fontSize='md'
-        color='#E3DAFF'
-        maxW={{
-          base: "100%",
-          md: "64%",
-          lg: "40%",
-          xl: "56%",
-          "2xl": "46%",
-          "3xl": "34%",
-        }}
-        fontWeight='500'
-        mb='40px'
-        lineHeight='28px'>
-        Enter in this creative world. Discover now the latest NFTs or start
-        creating your own!
-      </Text>
-      <Flex align='center'>
-        <Button
-          bg='white'
-          color='black'
-          _hover={{ bg: "whiteAlpha.900" }}
-          _active={{ bg: "white" }}
-          _focus={{ bg: "white" }}
-          fontWeight='500'
-          fontSize='14px'
-          py='20px'
-          px='27'
-          me='38px'>
-          Discover now
-        </Button>
-        <Link>
-          <Text color='white' fontSize='sm' fontWeight='500'>
-            Watch video
-          </Text>
-        </Link>
-      </Flex>
+      bgSize="cover"
+      py={{ base: "10px", md: "24px" }}
+      px={{ base: "10px", md: "24px" }}
+      borderRadius="30px"
+    >
+      <Carousel fade className="rounded-5">
+        <Carousel.Item interval={500}>
+          <img
+            className="d-block w-100 rounded-5"
+            src={bannerimage}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={500}>
+          <img
+            className="d-block w-100 rounded-5"
+            src={bannerimage}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={500}>
+          <img
+            className="d-block w-100 rounded-5"
+            src={bannerimage}
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </Flex>
   );
 }

@@ -48,10 +48,10 @@ export default function UserReports() {
           <MiniCalendar h='100%' minW='100%' selectRange={false} />
         </SimpleGrid>
       </SimpleGrid>
-      <SimpleGrid>
+      <SimpleGrid columns={{ base: 1, md: 1, xl: 1}} gap='20px' mb='20px'>
         <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md:1, xl: 1}} gap='20px' mb='20px'>
+      <SimpleGrid columns={{ base: 1, md: 1, xl: 1}} gap='20px' mb='20px'>
         <ComplexTable
           columnsData={columnsDataComplex}
           tableData={tableDataComplex}
