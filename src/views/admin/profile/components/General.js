@@ -5,6 +5,9 @@ import Card from "components/card/Card.js";
 import React from "react";
 import Information from "views/admin/profile/components/Information";
 
+// bootstrap import
+import 'bootstrap/dist/css/bootstrap.css';
+
 // Assets
 export default function GeneralInformation(props) {
   const { ...rest } = props;
@@ -16,7 +19,7 @@ export default function GeneralInformation(props) {
     "unset"
   );
   return (
-    <Card mb={{ base: "0px", "2xl": "20px" }} {...rest}>
+    <Card w = "125%" ml = '250px' mb={{ base: "0px", "2xl": "20px" }} {...rest}>
       <Text
         color={textColorPrimary}
         fontWeight='bold'
