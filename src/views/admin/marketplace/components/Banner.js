@@ -21,7 +21,7 @@ export default function Banner() {
       px={{ base: "10px", md: "24px" }}
       borderRadius="30px"
     >
-      <Carousel fade className="rounded-5">
+      <Carousel className="rounded-5">
         <Carousel.Item interval={500}>
           <img
             className="d-block w-100 rounded-5"
