@@ -18,14 +18,14 @@ export default function Projects(props) {
     "unset"
   );
   return (
-    <Card mb={{ base: "0px", "2xl": "20px" }}>
+    <Card w = "150%" mb={{ base: "0px", "2xl": "20px" }}>
       <Text
         color={textColorPrimary}
         fontWeight='bold'
         fontSize='2xl'
         mt='10px'
         mb='4px'>
-        All projects
+        My Favourites
       </Text>
       <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
         Here you can find more details about your projects. Keep you user

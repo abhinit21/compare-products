@@ -8,6 +8,7 @@ import RTLLayout from "layouts/rtl";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "theme/theme";
 import { ThemeEditorProvider } from "@hypertheme-editor/chakra-ui";
+import 'bootstrap/dist/css/bootstrap.min.css';  
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>
